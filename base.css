@@ -1,0 +1,135 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+main{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.header-3 {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1560px;
+    height: 130px;
+    padding: 0 0.8em;
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+  
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-nav-item {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+  }
+  
+  .logo img {
+    width: 70px;
+  }
+  .logo h1{
+    width: 70px;
+    font-size: 2rem;
+    display: inline-block;
+  }
+  .logo h2{
+    font-size: 0.5rem;
+  }
+  
+  .header-button {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .header-login {
+    color: #999;
+  }
+  
+  .header-post {
+    font-weight: bold;
+    color: #fff;
+    background: #4cdef5;
+    border: 1px #4cdef5 solid;
+    border-radius: 3px;
+  }
+  
+
+.top{
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+}
+.topleft{
+    max-width: 780px;
+}
+.topleft h1{
+    font-size: 2.3rem;
+    padding: 200px 0px 30px 0;
+    color: #003853;
+    width: 350px;
+}
+.topleft h2{
+    font-size: 1rem;
+    width: 250px;
+    font-weight: 300;
+}
+.topright{
+    width:auto;
+    height: auto;
+}
+
+.toppicture{
+    margin: 60px 32px 16px 0; 
+    height: 100%;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+.button02 a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    margin-top: 32px;
+    width: 300px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #4cdef5;
+    border-radius: 50vh;
+  }
+  
+  .button02 a::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #333333;
+    border-right: 3px solid #333333;
+    transform: rotate(45deg);
+  }
+  
+  .button02 a:hover {
+    text-decoration: none;
+    background-color: #bbbbbb;
+  }
+  @media screen and (max-width: 480px) {
+    .header-post {
+      display: none;
+    }
+  }
