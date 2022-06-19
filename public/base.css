@@ -73,15 +73,15 @@ main{
 
 .top{
     height: 70vh;
-    display: flex;
-    justify-content: space-around;
+    width: 100%;
 }
 .topleft{
-    max-width: 780px;
+    max-width: 580px;
+    display: inline-block;
 }
 .topleft h1{
     font-size: 2.3rem;
-    padding: 200px 0px 30px 0;
+    padding: 150px 0px 30px 0;
     color: #003853;
     width: 350px;
 }
@@ -91,14 +91,15 @@ main{
     font-weight: 300;
 }
 .topright{
-    width:auto;
+    width:500px;
     height: auto;
+    display: inline-block;
 }
 
 .toppicture{
     margin: 60px 32px 16px 0; 
-    height: 100%;
     filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+    
 }
 
 .button02 a {
