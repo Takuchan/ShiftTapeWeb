@@ -65,8 +65,8 @@ main{
   .header-post {
     font-weight: bold;
     color: #fff;
-    background: #4cdef5;
-    border: 1px #4cdef5 solid;
+    background: #4abdac;
+    border: 1px #4abdac solid;
     border-radius: 3px;
   }
   
@@ -112,7 +112,8 @@ main{
     color: #333;
     font-size: 18px;
     font-weight: 700;
-    background-color: #4cdef5;
+    color: white;
+    background-color: #f78733;
     border-radius: 50vh;
   }
   
@@ -192,14 +193,14 @@ main{
     text-align: center;
     top: -16px;
     left:10px;
-    color: #33586b;
-    text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
-              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
-              0px 1px 0 #FFF,  0-1px 0 #FFF,
-              -1px 0 0 #FFF, 1px 0 0 #FFF;
+    color: #fff;
+    text-shadow:1px 1px 0 #4abdac, -1px -1px 0 #4abdac,
+              -1px 1px 0 #4abdac, 1px -1px 0 #4abdac,
+              0px 1px 0 #4abdac,  0-1px 0 #4abdac,
+              -1px 0 0 #4abdac, 1px 0 0 #4abdac;
     font-weight: bold;
     border-radius: 100px;
-    background-color: #bbbbbb;
+    background-color: #4abdac;
     width: 50px;
   }
   .point .title{
@@ -211,7 +212,7 @@ main{
     margin: 0 16px 8px 16px;
   }
   section h3 span{
-    color: rgb(118, 175, 255);
+    color: #fc4a1a;
   }
   @media screen and (max-width: 480px) {
     .header-post {
