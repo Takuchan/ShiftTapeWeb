@@ -143,7 +143,8 @@ main{
     margin: auto 0;
   }
   .images img{
-    width: 100%;
+    width: 90%;
+
   }
 
   .contents .title{
@@ -168,6 +169,55 @@ main{
     text-align: center;
     width: 100%;
     font-size: 2.5rem;
+  }
+
+
+  /* どんなサービスか */
+  .line{
+    padding-top: 120px;
+   text-align: center;
+   max-width: 1400px;
+   margin: 0 auto;
+   
+  }
+
+  .stepCard{
+    border: #4abdac solid;
+    display: inline-block;
+    margin: 12px;
+    width: 300px;
+    height: 300px;
+    font-family: 'Kiwi Maru', serif;
+    border-radius: 90px;
+background: #55b9f3;
+box-shadow:
+  4.5px 15.7px 22.6px rgba(0, 0, 0, 0.056),
+  7.3px 25.4px 62.4px rgba(0, 0, 0, 0.08),
+  15.2px 52.9px 150.1px rgba(0, 0, 0, 0.104),
+  48px 167px 498px rgba(0, 0, 0, 0.16)
+;
+
+  }
+  .stepCard img{
+    z-index: 12;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 90px;
+  }
+  .whiteBack{
+    position: relative;
+    z-index: 13;
+    width: 300px;
+    height: 100px;
+    left: -32px;
+    top: -80px;
+    border-radius: 32px;
+    background-color: white;
+  }
+  .whiteBack h3{
+    font-size: 1.2rem;
+    
   }
 
 
