@@ -4,6 +4,10 @@
     padding:0;
     font-family: 'Noto Sans JP', sans-serif;
 }
+.max-width{
+  max-width: 1300px;
+
+}
 main{
     max-width: 1500px;
     margin: 0 auto;
@@ -115,6 +119,7 @@ main{
     color: white;
     background-color: #f78733;
     border-radius: 50vh;
+    text-decoration: none;
   }
   
   .button02 a::after {
@@ -136,15 +141,19 @@ main{
     text-align: center;
   }
   .card{
+    
     padding-top: 43px;
     width: 300px;
     display: inline-block;
     max-width: 400px;
-    margin: auto 0;
+    margin: 12px 32px;
   }
   .images img{
     width: 90%;
 
+  }
+  .contents{
+    padding-top: 6px;
   }
 
   .contents .title{
@@ -170,61 +179,94 @@ main{
     width: 100%;
     font-size: 2.5rem;
   }
-
-
-  /* どんなサービスか */
-  .line{
-    padding-top: 120px;
-   text-align: center;
-   max-width: 1400px;
-   margin: 0 auto;
-   
+  .verticalText{
+    margin: 0 0 64 auto;
+    writing-mode: vertical-rl;
+    font-family: 'Noto Serif JP', serif;
+    height: 300px;
+    text-align: left;
+    font-size: 2rem;
   }
 
-  .stepCard{
+  .stepbar {
+    margin: 0 auto;
+    width: 80%;
     
+  }
+  
+  .stepbar .stepbarwrap {
+    margin: 2em 0;
+    position: relative;
+  }
+  
+  .stepbar .stepbarwrap .steptitle {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .stepbar .stepbarwrap .steptitle .stepcircle {
     display: inline-block;
-    margin: 12px;
-    width: 300px;
-    height: 300px;
-    font-family: 'Kiwi Maru', serif;
-    border-radius: 30px;
-
-
+    width: 3em;
+    height: 3em;
+    content: "";
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
   }
-  .stepCard img{
-    z-index: 12;
+  
+  .stepbar .stepbarwrap .steptitle .stepcircle span {
+    display: inline-block;
+    line-height: 1.2em;
+    font-size: 0.8em;
+    font-weight: bold;
     position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 30px;
+    top: 0.9em;
   }
-  .whiteBack{
-    position: relative;
-    z-index: 13;
-    width: 300px;
-    height: 100px;
-    left: -32px;
-    top: -80px;
-    border-radius: 32px;
-    background-color: white;
-    box-shadow:
-  4.5px 15.7px 22.6px rgba(0, 0, 0, 0.056),
-  7.3px 25.4px 62.4px rgba(0, 0, 0, 0.08),
-  15.2px 52.9px 150.1px rgba(0, 0, 0, 0.104),
-  48px 167px 498px rgba(0, 0, 0, 0.16)
-;
+  
+  .stepbar .stepbarwrap .steptitle .title {
+    margin: 0.5em;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .stepbar .stepbarwrap .steptxt {
+    padding-left: 3.5em;
+    display: flex;
+    align-items:flex-start;
+    margin: 12px 0;
+    color: rgb(132, 132, 132);
+  }
+  
+  .stepbar .stepbarwrap .steptxt .txt {
+    font-size: 0.9em;
+    padding: 0 32px;
+    max-width: 320px;
+    letter-spacing: 0.15em;
+    line-height: 1.5em;
+  }
+  .steptxt img{
+    width: 30%;
+    height: 200px;
+  object-fit: cover;
+  border-radius: 10%;
+  
+  }
+  
+  .stepbar .stepbarwrap .stepline {
+    width: 1px;
+    height: calc(100% + 1em);
+    background-color: #000;
+    position: absolute;
+    top: 1em;
+    left: 1.5em;
+    z-index: -1;
+  }
+  
+  .stepbarwrap:last-of-type .stepline:last-of-type {
+    display: none;
+  }
 
-  }
-  .whiteBack h3{
-    padding-top: 8px;
-    font-size: 1.2rem;
-    color: #f78733;
-  }
-  .whiteBack p{
-    line-height: 1.3em;
-    font-size: 0.95rem;
-  }
 
   .points{
     padding-top: 100px;
@@ -347,6 +389,11 @@ main{
     .header-post {
       display: none;
     }
+    section h3{
+      text-align: center;
+      width: 100%;
+      font-size: 1.8rem;
+    }
     .hukidashi{
       border: #003853 solid;
       margin: 0 auto;
@@ -355,6 +402,35 @@ main{
     }
     .owner{
       flex-direction: column    ;
+    }
+    section p{
+      padding: 12px 44px;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+    .verticalText{
+      margin: 32px 32px 0 auto;
+      writing-mode: vertical-rl;
+      font-family: 'Noto Serif JP', serif;
+      height: 300px;
+      text-align: left;
+      font-size: 2rem;
+    }
+
+    .stepbar .stepbarwrap .steptxt {
+      flex-direction: column;
+    }
+    .stepbar .stepbarwrap .steptxt .txt{
+      padding-top: 12px;
+      
+    }
+    .steptxt img{
+      width: 75%;
+    
+    }
+  }@media screen and (max-width: 960px) {
+    .stepbar {
+      width: 90%;
     }
   }
 
